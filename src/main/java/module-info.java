@@ -3,6 +3,7 @@ module kda.desktop.nativefx {
     requires javafx.fxml;
     requires javafx.base;
     requires javafx.graphics;
+    requires org.apache.logging.log4j;
 
     opens kda.desktop.nativefx.gui to javafx.fxml;
     opens kda.desktop.nativefx to javafx.fxml;
