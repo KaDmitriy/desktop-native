@@ -12,5 +12,6 @@ public class Launcher {
     public static void main(String[] args) {
         log.info("Start application!");
         Application.launch(ApplicationMain.class, args);
+        log.debug("Stop application!");
     }
 }

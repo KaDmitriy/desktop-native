@@ -12,8 +12,8 @@
     </Appenders>
 
     <Loggers>
-        <Logger name="com.mycompany" level="INFO"/>
-        <Root level="DEBUG">
+        <Logger name="kda.desktop.nativefx" level="DEBUG"/>
+        <Root level="INFO">
             <AppenderRef ref="CONSOLE"/>
         </Root>
     </Loggers>
