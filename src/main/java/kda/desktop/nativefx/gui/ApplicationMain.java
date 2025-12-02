@@ -3,6 +3,7 @@ package kda.desktop.nativefx.gui;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -16,6 +17,10 @@ public class ApplicationMain extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         log.info("GUI application started");
+
+        Image icon = new Image(getClass().getResourceAsStream("icon.png"));
+        stage.getIcons().add(icon);
+
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("application.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 420, 240);
         stage.setTitle("Hello!");
