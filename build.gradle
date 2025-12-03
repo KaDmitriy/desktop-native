@@ -51,10 +51,10 @@ javafx {
 
 dependencies {
     implementation("org.apache.logging.log4j:log4j-core:2.25.2")
-    //implementation("com.fasterxml.jackson.core:jackson-databind:2.19.2")
-    //implementation("org.springframework:spring-messaging:6.2.11")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.19.2")
+    implementation("org.springframework:spring-messaging:6.2.11")
     implementation("org.springframework:spring-websocket:6.2.11")
-    //implementation("org.glassfish.tyrus.bundles:tyrus-standalone-client:2.1.5")
+    implementation("org.glassfish.tyrus.bundles:tyrus-standalone-client:2.1.5")
 
     implementation 'jakarta.servlet:jakarta.servlet-api:6.1.0'
 
@@ -85,8 +85,5 @@ jlink {
                 '--app-version', version
         ]
     }
-    mergedModule {
-            // ... other module directives
-           // uses 'javax.servlet.ServletContainerInitializer' // Example: Replace with your actual service interface
-    }
+    mergedModule {}
 }

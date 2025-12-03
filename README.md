@@ -11,8 +11,8 @@ NAMEAPP - gradle > jlink : launcher : name
 
 ### Param Linux
 1 Logging
-Create log4j2.xml to `nativefx/lib/log4j2.xml`
+Create log4j2.xml to `confroom/lib/log4j2.xml`
 
 ### Param Windows
 1 Logging
-Create log4j2.xml to `nativefx\log4j2.xml`
+Create log4j2.xml to `confroom\log4j2.xml`
