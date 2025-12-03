@@ -5,8 +5,11 @@ module kda.desktop.nativefx {
     requires javafx.graphics;
     requires org.apache.logging.log4j;
     requires org.apache.logging.log4j.core;
+    requires spring.beans;
+    //requires jakarta.servlet;
 
     uses org.apache.logging.log4j.spi.Provider;
+    uses org.springframework.beans.factory.serviceloader.AbstractServiceLoaderBasedFactoryBean;
 
     opens kda.desktop.nativefx.gui to javafx.fxml;
     opens kda.desktop.nativefx to javafx.fxml;
